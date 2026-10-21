@@ -112,7 +112,7 @@ body.show-notes #notes{display:block}
 <div style="flex:1;display:grid;grid-template-columns:repeat(2, 1fr);gap:12px">
 <div style="display:flex;flex-direction:column;gap:4px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:12px;padding:14px 18px">
 <p style="font-size:26px;font-weight:600;color:#131A2A">Stack Overflow</p>
-<p style="font-size:24px;line-height:1.35;color:#3E4656">공개 Q&amp;A를 MCP 서버로 연결 (2025.12 기준 베타)</p>
+<p style="font-size:24px;line-height:1.35;color:#3E4656">공개 Q&amp;A를 검색하는 MCP 서버 (2025.12 기준 베타)</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:4px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:12px;padding:14px 18px">
 <p style="font-size:26px;font-weight:600;color:#131A2A">국내</p>
@@ -139,10 +139,10 @@ body.show-notes #notes{display:block}
 <h2 style="font-size:60px;font-weight:600;line-height:1.2;letter-spacing:-1px;color:#131A2A;width:1600px">비슷한 서비스와 AIdea가 다르게 하려는 점</h2>
 <table style="font-size:24px;line-height:1.4;color:#3E4656;width:1664px">
 <tr style="background:#131A2A"><th style="width:14%;color:#F5F3EE;text-align:left">구분</th><th style="width:22%;color:#F5F3EE;text-align:left">대표 서비스</th><th style="width:32%;color:#F5F3EE;text-align:left">하는 일</th><th style="width:32%;color:#F5F3EE;text-align:left">AIdea가 다르게 하려는 점</th></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">공개 Q&amp;A</td><td>Stack Overflow MCP 서버, Stack Internal</td><td>사람이 쓴 질문·답변을 에이전트에서 검색 (공개판은 하루 100회, 베타)</td><td>에이전트 사용 중 생긴 프롬프트·오류·환경을 사례로 남깁니다</td></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">문서·메모리</td><td>Context7, 인프런 MCP, ByteRover, Mem0, Pieces</td><td>공식 문서, 강의, 내 작업 맥락을 에이전트에 연결</td><td>여러 사용자가 겪은 실패와 해결 과정을 모읍니다</td></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">Skill·MCP 목록</td><td>skills.sh, SkillsMP, Smithery</td><td>Skill과 MCP 서버를 모아 검색하고 설치</td><td>어떤 환경에서 실제로 문제를 풀었는지 기록합니다</td></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">바운티·후원</td><td>Algora, Gitcoin</td><td>Algora는 바운티에서 채용으로 전환 중, Gitcoin은 2025년 후원 사업 종료</td><td>바운티는 사례로 안 풀릴 때만 쓰는 보조 경로</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">공개 Q&amp;A</td><td>Stack Overflow MCP 서버, Stack Internal</td><td>사람이 쓴 질문·답변을 에이전트에서 검색합니다 (공개판 하루 100회까지, 베타)</td><td>에이전트 사용 중 생긴 프롬프트·오류·환경을 사례로 남깁니다</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">문서·메모리</td><td>Context7, 인프런 MCP, ByteRover, Mem0, Pieces</td><td>공식 문서·강의·내 작업 맥락을 에이전트에 연결합니다</td><td>여러 사용자가 겪은 실패와 해결 과정을 모읍니다</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">Skill·MCP 목록</td><td>skills.sh, SkillsMP, Smithery</td><td>Skill과 MCP 서버를 모아 검색·설치합니다</td><td>어떤 환경에서 실제로 문제를 풀었는지 기록합니다</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">바운티·후원</td><td>Algora, Gitcoin</td><td>Algora는 채용 서비스로 전환 중이고, Gitcoin은 2025년 후원 사업을 끝냈습니다</td><td>바운티는 사례로 안 풀릴 때만 씁니다</td></tr>
 <tr style="background:#FBFAF7"><td style="color:#9A3A15">위험</td><td>에이전트 회사, Stack Overflow</td><td>자기 사용자 데이터로 비슷한 기능을 만들 수 있습니다</td><td>여러 도구의 기록을 모으고 사람이 검증합니다 (팀 가정)</td></tr>
 </table>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6673">출처: Stack Overflow 블로그(2025.12), 각 서비스 소개·요금 페이지(2026.10 확인), Gitcoin 포럼(2025.4)</p>
@@ -203,12 +203,12 @@ body.show-notes #notes{display:block}
 </div>
 <div style="display:flex;flex-direction:column;gap:12px;border-top:4px solid #131A2A;padding:24px 0 0 0">
 <p style="font-family:'JetBrains Mono', monospace;font-size:96px;font-weight:600;line-height:1;letter-spacing:-3px;color:#131A2A">45.2%</p>
-<p style="font-size:26px;line-height:1.45;color:#131A2A">AI 코드를 디버깅하는 데 시간이 더 걸린다고 답한 비율</p>
+<p style="font-size:26px;line-height:1.45;color:#131A2A">AI가 만든 코드를 고치는 데 시간이 더 걸린다고 답한 비율</p>
 <p style="font-size:24px;color:#5F6673">SO 2025, 복수 응답</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px;border-top:4px solid #B4441A;padding:24px 0 0 0">
 <p style="font-family:'JetBrains Mono', monospace;font-size:96px;font-weight:600;line-height:1;letter-spacing:-3px;color:#131A2A">53.3%</p>
-<p style="font-size:26px;line-height:1.45;color:#131A2A">일부 AI 에이전트의 비용이 사용을 막는다는 데 동의한 비율</p>
+<p style="font-size:26px;line-height:1.45;color:#131A2A">비용 때문에 일부 AI 에이전트를 쓰기 어렵다는 데 동의한 비율</p>
 <p style="font-size:24px;color:#5F6673">SO 2025</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px;border-top:4px solid #B4441A;padding:24px 0 0 0">
@@ -220,9 +220,9 @@ body.show-notes #notes{display:block}
 <div style="flex:1"></div>
 <div style="display:flex;gap:32px;align-items:baseline;background:#ECEAE3;border-radius:12px;padding:24px 32px">
 <p style="font-size:26px;font-weight:600;color:#131A2A;width:220px">도구 회사의 대응</p>
-<p style="font-size:26px;line-height:1.45;color:#3E4656;flex:1">Anthropic: 2025.7 Claude Code 주간 사용 한도 도입 발표 · Cursor: 2025.7 요금 안내가 부족했다며 사과하고 환불 약속</p>
+<p style="font-size:26px;line-height:1.45;color:#3E4656;flex:1">Anthropic은 2025.7 Claude Code 주간 사용 한도를 발표했습니다. Cursor는 2025.7 요금 안내가 부족했다며 사과하고 환불을 약속했습니다.</p>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6673">출처: Stack Overflow 개발자 설문 2025(n=28,930~31,476)·2026, TechCrunch·Cursor 블로그(2025.7)</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6673">출처: Stack Overflow(SO) 개발자 설문 2025(n=28,930~31,476)·2026, TechCrunch·Cursor 블로그(2025.7)</p>
 <aside>이 불편은 조사에서도 보입니다. Stack Overflow 2025 설문에서 66%가 거의 맞지만 완전히 맞지는 않은 답을 겪은 문제로 꼽았고, 45.2%는 AI 코드를 디버깅하는 데 시간이 더 걸린다고 답했습니다. 비용도 부담입니다. 53.3%는 에이전트 비용이 사용을 막는다는 데 동의했고, 2026년에는 38%가 조직이 AI 사용량에 한도를 둔다고 답했습니다. 다만 반복 시도로 낭비되는 토큰을 직접 잰 설문은 아직 찾지 못했습니다.
 출처: Stack Overflow 2025 Developer Survey AI 페이지(2025.7.29), Stack Overflow 블로그 2026 설문 결과(2026.10.6), TechCrunch(2025.7.28), Cursor 블로그 ‘Clarifying our pricing’(2025.7.4).</aside>
 </section>
@@ -233,7 +233,7 @@ body.show-notes #notes{display:block}
 <div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:16px;padding:40px">
 <p style="font-family:'JetBrains Mono', monospace;font-size:24px;font-weight:600;color:#B4441A">01</p>
 <h3 style="font-size:40px;font-weight:600;line-height:1.2;color:#131A2A">문제 보내기</h3>
-<p style="font-size:28px;line-height:1.45;color:#3E4656">오류나 엉뚱한 결과가 나오면, 사용자가 확인한 범위의 프롬프트·오류·환경 정보를 보냅니다.</p>
+<p style="font-size:28px;line-height:1.45;color:#3E4656">오류나 엉뚱한 결과가 나오면, 사용자가 고른 범위만큼 프롬프트·오류·환경 정보를 보냅니다.</p>
 </div>
 <x-connector style="width:64px;align-self:center;color:#3E4656;border-width:3px"></x-connector>
 <div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:16px;padding:40px">
@@ -244,7 +244,7 @@ body.show-notes #notes{display:block}
 <x-connector style="width:64px;align-self:center;color:#3E4656;border-width:3px"></x-connector>
 <div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:16px;padding:40px">
 <p style="font-family:'JetBrains Mono', monospace;font-size:24px;font-weight:600;color:#B4441A">03</p>
-<h3 style="font-size:40px;font-weight:600;line-height:1.2;color:#131A2A">에이전트에 전달</h3>
+<h3 style="font-size:40px;font-weight:600;line-height:1.2;color:#131A2A">해결법 돌려주기</h3>
 <p style="font-size:28px;line-height:1.45;color:#3E4656">해결 방법을 에이전트가 읽는 형태로 돌려줍니다. 맞는 기록이 없으면 보상을 걸어 전문가에게 맡깁니다.</p>
 </div>
 </div>
@@ -276,8 +276,8 @@ body.show-notes #notes{display:block}
 <p style="font-size:28px;line-height:1.4;color:#FCEDE4">개발팀 구독으로 첫 수익을 검토합니다</p>
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;border-top:2px solid #FCEDE4;padding:24px 0 0 0">
-<p style="font-size:30px;font-weight:600;color:#FBF3EE">3단계 · 데이터 사업</p>
-<p style="font-size:28px;line-height:1.4;color:#FCEDE4">동의받은 비식별 사례 판매를 검토합니다</p>
+<p style="font-size:30px;font-weight:600;color:#FBF3EE">3단계 · 데이터</p>
+<p style="font-size:28px;line-height:1.4;color:#FCEDE4">동의받은 익명 사례 판매를 검토합니다</p>
 </div>
 </div>
 <aside>저희가 정한 방향은 사용자를 먼저 모으고, 데이터 사업은 그다음에 여는 것입니다. 사례와 프롬프트는 대부분 사용자가 쓰는 동안 쌓이기 때문입니다. 사례가 쌓일수록 바로 풀리는 문제가 늘고, 그러면 사용자가 다시 모이는 흐름을 만들려고 합니다.</aside>
@@ -346,7 +346,7 @@ body.show-notes #notes{display:block}
 </div>
 <div style="display:flex;gap:28px;align-items:baseline">
 <p style="font-family:'JetBrains Mono', 'IBM Plex Sans KR', monospace;font-size:80px;font-weight:600;line-height:1;color:#131A2A;width:270px">약 14%</p>
-<p style="font-size:26px;line-height:1.45;color:#131A2A;flex:1">LLM 등장 후 Stack Overflow 질문 수가 줄어든 평균 폭(최대 27.9%). 쉬운 질문이 주로 줄고 복잡한 질문은 남았습니다 (ISR 2026)</p>
+<p style="font-size:26px;line-height:1.45;color:#131A2A;flex:1">AI 챗봇 등장 후 Stack Overflow 질문 수가 쉬운 질문 위주로 줄어든 평균 폭, 최대 27.9% (ISR 2026)</p>
 </div>
 </div>
 </div>
@@ -355,7 +355,7 @@ body.show-notes #notes{display:block}
 <p style="font-size:24px;background:#F6E1D5;color:#9A3A15;padding:6px 18px;border-radius:28px">팀 해석</p>
 <p style="font-size:28px;line-height:1.45;color:#131A2A;flex:1">에이전트를 쓰다 풀린 문제를, 동의를 받아 기록으로 남길 곳이 필요하다고 봤습니다.</p>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6673">출처: Stack Overflow 설문 2025(n=30,751)·2026(n=13,945), del Rio-Chanona 외(PNAS Nexus, 2024.9), Xue 외(ISR, 2026.5)</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6673">출처: Stack Overflow(SO) 설문 2025(n=30,751)·2026(n=13,945), del Rio-Chanona 외(PNAS Nexus, 2024.9), Xue 외(ISR, 2026.5)</p>
 <aside>이 방향을 고른 첫 번째 근거입니다. 개발자는 사람이 남긴 해결 기록을 찾습니다. 2025년 설문 응답자의 35%가 AI 도구 문제 때문에 Stack Overflow를 찾았고, 2026년에는 93%가 AI 답의 출처 표시가 중요하다고 답했습니다. 반면 공개 기록은 줄고 있습니다. 질문 수는 평균 약 14% 줄었고, 주로 쉬운 질문이 줄었습니다. 해결이 AI와의 대화 안에서 끝나면 공개 기록이 남지 않습니다. 그래서 AIdea는 동의를 받아 그 기록을 남기려고 합니다.
 질문 대비: 2024년 PNAS Nexus 논문은 ChatGPT 출시 후 6개월 동안 Stack Overflow 활동이 비교 플랫폼보다 25% 더 줄었다고 추정했습니다. 2026년 ISR 논문에서 질문 수 감소는 시간이 지나며 최대 27.9%였고, 맥락이 복잡한 질문은 남았습니다. 그래서 모델이 좋아져도 버전과 환경마다 다른 복잡한 문제는 남는다고 봤습니다.
 출처: Stack Overflow 2025 Developer Survey Stack Overflow 페이지, Stack Overflow 2026 Developer Survey Knowledge 페이지, PNAS Nexus ‘Large language models reduce public knowledge sharing on online Q&amp;A platforms’(2024.9), Information Systems Research ‘Can ChatGPT Kill User-Generated Q&amp;A Platforms?’(2026.5.21).</aside>
@@ -378,7 +378,7 @@ body.show-notes #notes{display:block}
 <div style="display:flex;flex-direction:column;gap:14px;border-top:4px solid #131A2A;padding:24px 0 0 0">
 <p style="font-size:26px;font-weight:600;color:#B4441A">데이터 거래</p>
 <p style="font-family:'JetBrains Mono', monospace;font-size:88px;font-weight:600;line-height:1;letter-spacing:-3px;color:#131A2A">2005→2024</p>
-<p style="font-size:26px;line-height:1.45;color:#131A2A">2005년 시작한 Reddit이 2024년 1월 총액 2억 300만 달러의 데이터 계약을 맺었습니다</p>
+<p style="font-size:26px;line-height:1.45;color:#131A2A">2005년 시작한 Reddit이 2024년 1월 맺은 총액 2억 300만 달러의 데이터 계약</p>
 <div style="flex:1"></div>
 <p style="font-size:26px;line-height:1.45;color:#9A3A15;border-top:1px solid #CFC9BB;padding:16px 0 0 0">데이터 거래는 기록이 오래 쌓인 뒤에 생긴다고 보고 사용자부터 모읍니다</p>
 </div>
@@ -418,7 +418,7 @@ body.show-notes #notes{display:block}
 <p style="font-size:28px;font-weight:600;color:#131A2A;border-bottom:2px solid #131A2A;padding:0 0 12px 0">수익 단계</p>
 <div style="display:flex;flex-direction:column;gap:6px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:12px;padding:20px 28px">
 <p style="font-size:28px;font-weight:600;color:#131A2A">1단계 · 사용자 확보</p>
-<p style="font-size:26px;line-height:1.45;color:#3E4656">개인 무료. 설치 수, 반복 사용, 공유 동의율을 봅니다</p>
+<p style="font-size:26px;line-height:1.45;color:#3E4656">개인 무료 이용 (지표: 설치 수, 반복 사용, 공유 동의율)</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:12px;padding:20px 28px">
 <p style="font-size:28px;font-weight:600;color:#131A2A">2단계 · 팀 유료화</p>
@@ -426,12 +426,12 @@ body.show-notes #notes{display:block}
 </div>
 <div style="display:flex;flex-direction:column;gap:6px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:12px;padding:20px 28px">
 <p style="font-size:28px;font-weight:600;color:#131A2A">3단계 · 데이터</p>
-<p style="font-size:26px;line-height:1.45;color:#3E4656">동의와 권한을 따로 받은 비식별 사례 데이터셋 판매 (검토)</p>
+<p style="font-size:26px;line-height:1.45;color:#3E4656">동의와 권한을 따로 받은 익명 사례 데이터셋 판매 (검토)</p>
 </div>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6673">바운티는 보조 경로입니다. 개인은 크레딧으로 올리고, 초기 보상은 팀 예산으로 주는 방안을 검토합니다.</p>
-<aside>사업모델입니다. 개인 사용자는 무료로 쓰고, 해결 사례와 검증된 Skill을 받는 대신 동의한 범위의 기록을 내놓습니다. 해결자는 바운티 보상과 평판을 받습니다. 돈은 사례가 쌓인 뒤에 받습니다. 2단계에서는 개발팀에 사내 비공개 사례 공간과 조직용 MCP를 구독으로 팔 계획입니다. 3단계에서는 동의와 권한을 따로 받은 비식별 사례를 데이터로 판매하는 방안을 검토합니다. 누가 얼마를 낼지는 아직 확인하지 않았습니다.
+<aside>사업모델입니다. 개인 사용자는 무료로 쓰고, 해결 사례와 검증된 Skill을 받는 대신 동의한 범위의 기록을 내놓습니다. 해결자는 바운티 보상과 평판을 받습니다. 돈은 사례가 쌓인 뒤에 받습니다. 2단계에서는 개발팀에 사내 비공개 사례 공간과 조직용 MCP를 구독으로 팔 계획입니다. 3단계에서는 동의와 권한을 따로 받은 익명 사례를 데이터로 판매하는 방안을 검토합니다. 누가 얼마를 낼지는 아직 확인하지 않았습니다.
 참고: 바운티 단독 서비스는 어려움을 겪었습니다. Algora는 채용 서비스로 방향을 바꾸기 시작했고, Gitcoin은 2025년 후원 사업을 끝냈습니다. 그래서 바운티는 보조 경로로 둡니다. 단계별 상품과 넘어가는 조건은 부록에 있습니다.</aside>
 </section>
 <section id="bm-flow" data-transition="fade" style="background:#F5F3EE;color:#3E4656;font-family:'IBM Plex Sans KR', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
@@ -472,11 +472,11 @@ body.show-notes #notes{display:block}
 </div>
 <div style="display:flex;gap:20px;align-items:baseline">
 <p style="font-family:'JetBrains Mono', monospace;font-size:26px;font-weight:600;color:#B4441A;width:36px">2</p>
-<p style="font-size:26px;line-height:1.45;color:#131A2A;flex:1">해결 여부, 시간, 시도 횟수, 토큰을 기록합니다. B에는 AIdea 도구 설명과 호출에 쓴 토큰도 넣습니다</p>
+<p style="font-size:26px;line-height:1.45;color:#131A2A;flex:1">해결 여부, 시간, 시도 횟수, 토큰을 기록합니다. B에는 AIdea가 쓰는 토큰도 넣습니다</p>
 </div>
 <div style="display:flex;gap:20px;align-items:baseline">
 <p style="font-family:'JetBrains Mono', monospace;font-size:26px;font-weight:600;color:#B4441A;width:36px">3</p>
-<p style="font-size:26px;line-height:1.45;color:#131A2A;flex:1">참여자가 실제로 막혔던 문제로 기존 사례 적중률을 잽니다</p>
+<p style="font-size:26px;line-height:1.45;color:#131A2A;flex:1">참여자가 막혔던 실제 문제가 기존 사례와 얼마나 맞는지 잽니다</p>
 </div>
 <div style="display:flex;gap:20px;align-items:baseline">
 <p style="font-family:'JetBrains Mono', monospace;font-size:26px;font-weight:600;color:#B4441A;width:36px">4</p>
@@ -516,7 +516,7 @@ body.show-notes #notes{display:block}
 <section data-appendix="1" id="appendix-cover" data-transition="fade" style="background:#131A2A;color:#F5F3EE;font-family:'IBM Plex Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:32px">
 <p style="font-family:'JetBrains Mono', 'IBM Plex Sans KR', monospace;font-size:24px;letter-spacing:3px;color:#F08A5D">AIdea · [팀명]</p>
 <h1 style="font-size:120px;font-weight:700;line-height:1.1;letter-spacing:-3px;color:#F5F3EE">부록</h1>
-<p style="font-size:32px;line-height:1.45;color:#B9C0CC;width:1300px">질의응답용 자료: 아직 확인하지 못한 것, 수익 단계와 조건, 데이터 신뢰 원칙</p>
+<p style="font-size:32px;line-height:1.45;color:#B9C0CC;width:1300px">질의응답용 자료: 아직 확인하지 못한 것, 수익 단계와 조건, 데이터 공유 범위와 원칙</p>
 <aside>참고: 부록은 발표에서는 건너뛰고, 질문이 나오면 해당 장을 펴서 답합니다.</aside>
 </section>
 <section data-appendix="1" id="ev-gaps" data-transition="fade" style="background:#F5F3EE;color:#3E4656;font-family:'IBM Plex Sans KR', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
@@ -524,11 +524,11 @@ body.show-notes #notes{display:block}
 <h2 style="font-size:60px;font-weight:600;line-height:1.2;letter-spacing:-1px;color:#131A2A;width:1600px">아직 확인하지 못한 것과 확인할 방법</h2>
 <table style="font-size:24px;line-height:1.4;color:#3E4656;width:1664px">
 <tr style="background:#131A2A"><th style="width:46%;color:#F5F3EE;text-align:left">확인하지 못한 것</th><th style="width:40%;color:#F5F3EE;text-align:left">확인 방법</th><th style="width:14%;color:#F5F3EE;text-align:left">시점</th></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">사용자의 실제 문제가 기존 사례와 얼마나 맞는지</td><td>참여자가 가져온 실제 문제의 적중률</td><td>MVP</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">사용자의 실제 문제가 기존 사례와 얼마나 맞는지</td><td>참여자 문제 중 사례와 맞는 비율</td><td>MVP</td></tr>
 <tr style="background:#FBFAF7"><td style="color:#131A2A">사용자가 MCP·플러그인을 설치하고 다시 쓰는지</td><td>1주일 동안 직접 부른 횟수</td><td>MVP</td></tr>
 <tr style="background:#FBFAF7"><td style="color:#131A2A">AIdea가 쓰는 토큰까지 넣어도 전체 토큰이 줄어드는지</td><td>두 방식의 토큰을 모두 넣어 비교</td><td>MVP</td></tr>
 <tr style="background:#FBFAF7"><td style="color:#131A2A">프롬프트·오류 정보를 어디까지 공유할지</td><td>공유 범위 1~3 중 어디까지 괜찮은지 질문</td><td>MVP</td></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">전문가가 바운티에 참여하는지, 적정 보상</td><td>풀리지 않은 과제 일부를 실제 바운티로 올려 확인</td><td>MVP</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">전문가가 얼마를 받으면 바운티에 참여하는지</td><td>풀리지 않은 과제 일부를 실제 바운티로 올려 확인</td><td>MVP</td></tr>
 <tr style="background:#FBFAF7"><td style="color:#131A2A">국내 개발자가 겪는 불편의 정도</td><td>국내 개발자 인터뷰·설문 [__명]</td><td>MVP 전후</td></tr>
 <tr style="background:#FBFAF7"><td style="color:#131A2A">개발팀의 구독 지불 의사와 가격</td><td>개발팀 인터뷰 [__곳]</td><td>2단계 전</td></tr>
 <tr style="background:#FBFAF7"><td style="color:#131A2A">데이터 구매 수요와 학습용 사용 권한</td><td>구매 후보 인터뷰, 법률 검토</td><td>3단계 전</td></tr>
@@ -542,8 +542,8 @@ body.show-notes #notes{display:block}
 <table style="font-size:24px;line-height:1.4;color:#3E4656;width:1664px">
 <tr style="background:#131A2A"><th style="width:16%;color:#F5F3EE;text-align:left">단계</th><th style="width:22%;color:#F5F3EE;text-align:left">돈을 내는 쪽</th><th style="width:30%;color:#F5F3EE;text-align:left">상품</th><th style="width:32%;color:#F5F3EE;text-align:left">다음 단계로 넘어가는 조건 (가안)</th></tr>
 <tr style="background:#FBFAF7"><td style="color:#131A2A">1단계<br>사용자 확보</td><td>없음 (개인 무료)</td><td>MCP·플러그인, 웹 커뮤니티</td><td>주간 사용자 [__명], 공유에 동의한 사례 [__건]</td></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">2단계<br>팀 유료화</td><td>개발팀</td><td>팀 구독, 팀이 올린 바운티의 수수료 [__%] (보조)</td><td>유료 팀 [__곳], 해결된 바운티 [__건]</td></tr>
-<tr style="background:#FBFAF7"><td style="color:#131A2A">3단계<br>데이터</td><td>모델·에이전트 개발사, Skill 제작사</td><td>비식별 사례 데이터셋, 여러 Skill을 비교한 분석 리포트</td><td>학습용 판매에 동의한 사례 [__건], 법률 검토</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">2단계<br>팀 유료화</td><td>개발팀</td><td>팀 구독, 팀이 올린 바운티 수수료 [__%] (보조 수익)</td><td>유료 팀 [__곳], 해결된 바운티 [__건]</td></tr>
+<tr style="background:#FBFAF7"><td style="color:#131A2A">3단계<br>데이터</td><td>모델·에이전트 개발사, Skill 제작사</td><td>익명 사례 데이터셋, 여러 Skill을 비교한 분석 리포트</td><td>학습용 판매에 동의한 사례 [__건], 법률 검토</td></tr>
 </table>
 <div style="display:flex;gap:32px">
 <div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:2px solid #131A2A;padding:20px 0 0 0">
@@ -559,32 +559,32 @@ body.show-notes #notes{display:block}
 <p style="font-size:26px;line-height:1.45;color:#131A2A">누가 돈을 낼지, 가격은 얼마인지, 누가 구매를 결정하는지는 아직 확인하지 않았습니다</p>
 </div>
 </div>
-<aside>앞에서 말씀드린 세 단계를 이번에는 돈을 내는 쪽과 다음 단계로 넘어가는 조건으로 나눠 보겠습니다. 1단계에는 돈을 내는 쪽이 없습니다. 이 기간의 서버 비용, 초기 사례 작성, 바운티 보상은 팀 예산과 지원 사업으로 감당하려고 합니다. 금액은 가안을 잡는 중입니다. 2단계에서는 개발팀에 팀 구독을 팔고, 팀이 올린 바운티에서 수수료를 받는 방안을 검토합니다. 바운티는 단독 사업으로는 어렵다고 봐서 보조 수익으로만 둡니다. 3단계에서는 비식별 사례 데이터셋과 여러 Skill을 비교한 분석 리포트를 판매하는 방안을 검토합니다. 오른쪽 열의 숫자는 아직 비워 두었고, MVP 결과를 보고 가안을 채우겠습니다. 누가 돈을 낼지, 가격은 얼마인지, 누가 구매를 결정하는지는 아직 확인하지 않았습니다.</aside>
+<aside>앞에서 말씀드린 세 단계를 이번에는 돈을 내는 쪽과 다음 단계로 넘어가는 조건으로 나눠 보겠습니다. 1단계에는 돈을 내는 쪽이 없습니다. 이 기간의 서버 비용, 초기 사례 작성, 바운티 보상은 팀 예산과 지원 사업으로 감당하려고 합니다. 금액은 가안을 잡는 중입니다. 2단계에서는 개발팀에 팀 구독을 팔고, 팀이 올린 바운티에서 수수료를 받는 방안을 검토합니다. 바운티는 단독 사업으로는 어렵다고 봐서 보조 수익으로만 둡니다. 3단계에서는 익명 사례 데이터셋과 여러 Skill을 비교한 분석 리포트를 판매하는 방안을 검토합니다. 오른쪽 열의 숫자는 아직 비워 두었고, MVP 결과를 보고 가안을 채우겠습니다. 누가 돈을 낼지, 가격은 얼마인지, 누가 구매를 결정하는지는 아직 확인하지 않았습니다.</aside>
 </section>
 <section data-appendix="1" id="feat-trust" data-transition="fade" style="background:#F5F3EE;color:#3E4656;font-family:'IBM Plex Sans KR', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <p style="font-family:'JetBrains Mono', 'IBM Plex Sans KR', monospace;font-size:24px;letter-spacing:3px;color:#B4441A">05 비즈니스의 구체화 · 기능 설계</p>
 <h2 style="font-size:60px;font-weight:600;line-height:1.2;letter-spacing:-1px;color:#131A2A;width:1600px">데이터는 사용자가 확인한 범위만 받습니다</h2>
 <div style="flex:1;display:flex;gap:64px">
 <div style="width:680px;display:flex;flex-direction:column;gap:16px">
-<p style="font-size:28px;font-weight:600;color:#131A2A">공유 범위 (사용자가 고름)</p>
+<p style="font-size:28px;font-weight:600;color:#131A2A">사용자가 고르는 공유 범위</p>
 <div style="display:flex;flex-direction:column;gap:8px;background:#FBFAF7;border:1px solid #DDD8CC;border-radius:12px;padding:28px">
 <h3 style="font-size:32px;font-weight:600;color:#131A2A">범위 1 · 오류·환경 정보만</h3>
 <p style="font-size:26px;line-height:1.4;color:#3E4656">오류 메시지, 모델·도구·버전</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#ECEAE3;border:1px solid #DDD8CC;border-radius:12px;padding:28px">
 <h3 style="font-size:32px;font-weight:600;color:#131A2A">범위 2 · 프롬프트 포함</h3>
-<p style="font-size:26px;line-height:1.4;color:#3E4656">범위 1에 사용자가 입력한 프롬프트를 더합니다</p>
+<p style="font-size:26px;line-height:1.4;color:#3E4656">범위 1에 더해 사용자가 입력한 프롬프트</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#E2DED4;border:1px solid #CFC9BB;border-radius:12px;padding:28px">
 <h3 style="font-size:32px;font-weight:600;color:#131A2A">범위 3 · 코드 일부 포함</h3>
-<p style="font-size:26px;line-height:1.4;color:#3E4656">범위 2에 문제와 관련된 코드 조각을 더합니다</p>
+<p style="font-size:26px;line-height:1.4;color:#3E4656">범위 2에 더해 문제와 관련된 코드 조각</p>
 </div>
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:28px">
 <p style="font-size:28px;font-weight:600;color:#131A2A">지키는 원칙</p>
 <div style="display:flex;gap:24px;align-items:flex-start">
 <x-icon name="Lock" style="color:#B4441A;width:48px;height:48px"></x-icon>
-<p style="font-size:28px;line-height:1.45;color:#131A2A;flex:1">보내기 전에 미리보기를 보여 주고, 키·토큰·개인정보는 자동으로 가립니다.</p>
+<p style="font-size:28px;line-height:1.45;color:#131A2A;flex:1">보내기 전에 미리보기를 보여 주고, 인증 정보와 개인정보는 자동으로 가립니다.</p>
 </div>
 <div style="display:flex;gap:24px;align-items:flex-start">
 <x-icon name="Key" style="color:#B4441A;width:48px;height:48px"></x-icon>
