@@ -4,7 +4,9 @@ AI 때문에 막힌 개발자가 먼저 푼 사람의 기록으로 문제를 해
 
 ## 보는 법
 
-`index.html`을 브라우저로 열면 돼요. 글꼴은 인터넷에 연결돼 있을 때 Google Fonts에서 불러와요.
+**바로 보기: https://gepi2.github.io/aidea-pitch-deck/**
+
+내려받아 볼 때는 `index.html`을 브라우저로 열면 돼요. 글꼴은 인터넷에 연결돼 있을 때 Google Fonts에서 불러와요.
 
 | 키 | 동작 |
 | --- | --- |
